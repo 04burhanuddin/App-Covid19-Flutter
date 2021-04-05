@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:dio/dio.dart';
-import 'package:covid19_indonesia/models/kasus_indonesia.dart';
-import 'package:covid19_indonesia/shareds/shareds.dart';
-//
+part of 'screens.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -61,7 +57,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 Container(
-                  color: color1,
+                  color: Colors.blue,
                   height: 200,
                   child: Center(
                     child: Text(

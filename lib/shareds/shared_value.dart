@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
+part of 'shareds.dart';
 
-Color color1 = Colors.black;
+Color color1 = Colors.red;
+
+String gambarku = "assets/images/logo.svg";
