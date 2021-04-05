@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
     if (response.statusCode == 200) {
       return DataIndonesia.fromJson(response.data[0]);
     } else {
-      throw Exception('Failed to load data');
+      throw Exception('Gagal mengambil data');
     }
   }
 

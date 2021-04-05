@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
 
@@ -16,7 +15,9 @@ class ScreenBloc extends Bloc<ScreenEvent, ScreenState> {
     if (event is GoToSplashScreen) {
       yield OnSplashScreen();
     } else if (event is GoToBoardingScreen) {
-      yield OnSBOardingScreen();
+      yield OnSBoardingScreen();
+    } else if (event is GoToHomeScreen) {
+      yield OnHomeScreen();
     }
   }
 }

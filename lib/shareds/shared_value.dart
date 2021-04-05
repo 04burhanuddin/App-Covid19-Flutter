@@ -1,5 +1,9 @@
 part of 'shareds.dart';
 
-Color color1 = Colors.red;
+// costum color
+Color background = Colors.black26;
 
-String gambarku = "assets/images/logo.svg";
+Color positif = Colors.red;
+Color dirawat = Colors.red;
+Color sembuh = Colors.red;
+Color meninggal = Colors.red;
