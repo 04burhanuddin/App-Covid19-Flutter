@@ -7,6 +7,4 @@ class ScreenInitial extends ScreenState {}
 
 class OnSplashScreen extends ScreenState {}
 
-class OnSBoardingScreen extends ScreenState {}
-
 class OnHomeScreen extends ScreenState {}

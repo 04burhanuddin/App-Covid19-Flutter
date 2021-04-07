@@ -14,8 +14,6 @@ class ScreenBloc extends Bloc<ScreenEvent, ScreenState> {
   ) async* {
     if (event is GoToSplashScreen) {
       yield OnSplashScreen();
-    } else if (event is GoToBoardingScreen) {
-      yield OnSBoardingScreen();
     } else if (event is GoToHomeScreen) {
       yield OnHomeScreen();
     }

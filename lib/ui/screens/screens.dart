@@ -6,4 +6,3 @@ import 'package:covid19_indonesia/models/kasus_indonesia.dart';
 
 part 'home.dart';
 part 'splash.dart';
-part 'boarding.dart';
