@@ -36,6 +36,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // mengganti background
       backgroundColor: background,
       appBar: AppBar(
         title: Text("Covid Indonesia"),
