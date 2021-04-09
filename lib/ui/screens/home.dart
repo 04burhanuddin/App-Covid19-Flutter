@@ -1,4 +1,6 @@
 part of 'screens.dart';
+// untuk import library sdi sini saya buat terpisah dari halaman ini
+// untuk setiap import nya ada di screen.dart
 
 class HomePage extends StatefulWidget {
   @override
@@ -9,6 +11,7 @@ class _HomePageState extends State<HomePage> {
   Future<DataIndonesia> dataIndonesia;
 
   Future<DataIndonesia> getDataIndonesia() async {
+    // get data
     var dio = Dio();
     final response = await dio.get('https://api.kawalcorona.com/indonesia/');
     print(response.data);

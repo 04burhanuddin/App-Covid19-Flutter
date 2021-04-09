@@ -1,5 +1,9 @@
+// part dari widget.dart
 part of 'widget.dart';
 
+// Widget ini belum digunakan dikarenakan waktu tidak cukup.
+// widget ini nantinya akan saya gunakan di tampilan home dengan memeanfaatkan
+// share widget.
 Widget pencegahan() {
   return Container(
     child: GridView.count(

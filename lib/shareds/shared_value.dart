@@ -1,3 +1,4 @@
+// part dari shareds.dart
 part of 'shareds.dart';
 
 // costum color

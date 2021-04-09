@@ -7,6 +7,7 @@ Project UTS Framework MObile <b>STMIK Akakom Yogyakart</b>
 - Dependencies Tambahan :
     - <b>Dio</b> Untuk Klien HTTP untuk get data dari API selengkapnya https://pub.dev/packages/dio
     - Assets Image ON
+- Kumpulan Package https://pub.dev/
 # API SPEC
 - GET Data Indonesia :
     - Method : GET
@@ -58,5 +59,6 @@ Tampilan masih dalam proses develop belum selesai semua, intinya aplikasinya aka
  - models, di dalamnya terdapat sebuah file dengan nama file `kasus_indonesia.dart` file ini digunakan unntuk menampung data dari response API yang sudah di convert dari json to dart 
  - shareds, pada folder ini berisi data shared value dan method namu di sini khusus shared value
  - ui, Untuk menampung semua yang berhubungan dengan ui mulai dari screen widget dll pada kasus ini hanya terdapat screen dan widget.
+ - Untuk import package ada di file yang berbeda ini saya lakukan agar lebih rapih saja dan terstruktur. dengan menggunakan part dan part of selengkapnya bisa di lihat pada program. <b>part si sini di ibaratakan sebagai perpustakaan yang menyedikan import package dan part of sebagai pengguna yang menggunakan import dari perpustakaan tersebut.</b> Part di sini tidak bisa berbagi jika file berada di luar folder.
 
 # On Proses
