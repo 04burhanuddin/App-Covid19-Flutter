@@ -3,7 +3,7 @@ Project UTS Framework MObile <b>STMIK Akakom Yogyakart</b>
 ### Dibuat Dengan Menggunakan :
 - Flutter Version : `Flutter 2.0.3 • channel stable`
 - VS Code
-- Aplikasi dapat di coba dalam folder ```build_apk/app-debug.apk``
+- Aplikasi dapat di coba dalam folder `build_apk/app-debug.apk`
 - Dependencies Tambahan :
     - <b>Dio</b> Untuk Klien HTTP untuk get data dari API selengkapnya https://pub.dev/packages/dio
     - Assets Image ON
