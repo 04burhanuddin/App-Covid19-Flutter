@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.covid19_indonesia">
+    package="com.tugasuts.burhanuddin">
    <application
         android:label="covid19_indonesia"
         android:icon="@mipmap/ic_launcher">

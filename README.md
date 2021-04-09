@@ -7,6 +7,7 @@ Project UTS Framework MObile <b>STMIK Akakom Yogyakart</b>
 - Dependencies Tambahan :
     - <b>Dio</b> Untuk Klien HTTP untuk get data dari API selengkapnya https://pub.dev/packages/dio
     - Assets Image ON
+    - <b>change_app_package_name</b> saya gunakan Untuk mengganti package name selengkapnya https://pub.dev/packages/change_app_package_name
 - Kumpulan Package https://pub.dev/
 # API SPEC
 - GET Data Indonesia :
