@@ -1,7 +1,7 @@
 part of 'shareds.dart';
 
 // costum color
-Color background = Colors.black26;
+Color background = Colors.white30;
 
 Color positif = Colors.red;
 Color dirawat = Colors.red;

@@ -11,7 +11,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   startTImer() async {
-    var duration = new Duration(seconds: 1);
+    var duration = new Duration(seconds: 2);
     return new Timer(duration, nextScreen);
   }
 
@@ -24,11 +24,21 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: background,
       body: Center(
-        child: Text(
-          "Hello",
-          style: TextStyle(fontSize: 30),
+        child: Container(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              new Align(
+                alignment: Alignment.center,
+                child: Image.asset(
+                  'assets/images/logo.png',
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
