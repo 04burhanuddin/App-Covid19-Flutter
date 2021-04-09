@@ -1,9 +1,9 @@
 part of 'shareds.dart';
 
 // costum color
-Color background = Colors.white30;
-
-Color positif = Colors.red;
-Color dirawat = Colors.red;
-Color sembuh = Colors.red;
-Color meninggal = Colors.red;
+Color background = Colors.grey[50];
+// color for kasus
+Color positif = Colors.red[400];
+Color dirawat = Colors.blue;
+Color sembuh = Colors.green[400];
+Color meninggal = Colors.yellow[700];

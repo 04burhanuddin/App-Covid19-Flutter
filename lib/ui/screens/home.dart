@@ -33,6 +33,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: background,
       appBar: AppBar(
         title: Text("Covid Indonesia"),
         // agar title adal di tengah
@@ -58,8 +59,9 @@ class _HomePageState extends State<HomePage> {
                   children: <Widget>[
                     // Kasus positif
                     Container(
-                      padding: EdgeInsets.only(left: 15, top: 30),
-                      color: Colors.red,
+                      // add padding dalam gridView
+                      padding: EdgeInsets.only(left: 15, top: 34),
+                      color: positif,
                       height: 200,
                       child: Column(
                         children: <Widget>[
@@ -72,12 +74,11 @@ class _HomePageState extends State<HomePage> {
                           ),
                           Padding(padding: EdgeInsets.all(10)),
                           new Align(
-                            // align agar ada di tengan
                             alignment: Alignment.centerLeft,
                             child: new Text(
-                              // response data
                               "${snapshot.data.positif}",
-                              style: TextStyle(fontSize: 30),
+                              style: TextStyle(
+                                  fontSize: 30, fontWeight: FontWeight.w500),
                             ),
                           ),
                           Padding(padding: EdgeInsets.all(10)),
@@ -94,8 +95,8 @@ class _HomePageState extends State<HomePage> {
 
                     // Kasus dirawat
                     Container(
-                      padding: EdgeInsets.only(left: 15, top: 25),
-                      color: Colors.blue,
+                      padding: EdgeInsets.only(left: 15, top: 34),
+                      color: dirawat,
                       height: 200,
                       child: Column(
                         children: <Widget>[
@@ -111,7 +112,8 @@ class _HomePageState extends State<HomePage> {
                             alignment: Alignment.centerLeft,
                             child: new Text(
                               "${snapshot.data.dirawat}",
-                              style: TextStyle(fontSize: 30),
+                              style: TextStyle(
+                                  fontSize: 30, fontWeight: FontWeight.w500),
                             ),
                           ),
                           Padding(padding: EdgeInsets.all(10)),
@@ -128,8 +130,8 @@ class _HomePageState extends State<HomePage> {
 
                     // Kasus sembuh
                     Container(
-                      padding: EdgeInsets.only(left: 15, top: 25),
-                      color: Colors.green,
+                      padding: EdgeInsets.only(left: 15, top: 34),
+                      color: sembuh,
                       height: 200,
                       child: Column(
                         children: <Widget>[
@@ -145,7 +147,8 @@ class _HomePageState extends State<HomePage> {
                             alignment: Alignment.centerLeft,
                             child: new Text(
                               "${snapshot.data.sembuh}",
-                              style: TextStyle(fontSize: 30),
+                              style: TextStyle(
+                                  fontSize: 30, fontWeight: FontWeight.w500),
                             ),
                           ),
                           Padding(padding: EdgeInsets.all(10)),
@@ -162,8 +165,8 @@ class _HomePageState extends State<HomePage> {
 
                     // Kasus Meninggal
                     Container(
-                      padding: EdgeInsets.only(left: 15, top: 25),
-                      color: Colors.yellow[600],
+                      padding: EdgeInsets.only(left: 15, top: 34),
+                      color: meninggal,
                       height: 200,
                       child: Column(
                         children: <Widget>[
@@ -179,7 +182,8 @@ class _HomePageState extends State<HomePage> {
                             alignment: Alignment.centerLeft,
                             child: new Text(
                               "${snapshot.data.meninggal}",
-                              style: TextStyle(fontSize: 30),
+                              style: TextStyle(
+                                  fontSize: 30, fontWeight: FontWeight.w500),
                             ),
                           ),
                           Padding(padding: EdgeInsets.all(10)),
