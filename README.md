@@ -49,12 +49,6 @@ Tampilan masih dalam proses develop belum selesai semua, intinya aplikasinya aka
  ┣ 📂ui
  ┃ ┣ 📂screens
  ┃ ┃ ┣ 📜home.dart
- ┃ ┃ ┣ 📜screens.dart
- ┃ ┃ ┗ 📜splash.dart
- ┃ ┗ 📂widget
- ┃ ┃ ┣ 📜prevention.dart
- ┃ ┃ ┗ 📜widget.dart
- ┗ 📜main.dart
  ```
  <b>Keterangan Folder :</b>
  - models, di dalamnya terdapat sebuah file dengan nama file `kasus_indonesia.dart` file ini digunakan unntuk menampung data dari response API yang sudah di convert dari json to dart 
