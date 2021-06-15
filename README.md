@@ -34,7 +34,7 @@ Project UTS Framework MObile <b>STMIK Akakom Yogyakart</b>
 Tampilan masih dalam proses develop belum selesai semua, intinya aplikasinya akan mirip dengan aplikasi yang saya buat sebelumnya dengan mengguanakn <b>bahasa pemrograman Kotlin</b> link aplikasi yang serupa https://github.com/04burhanuddin/Mobile-Dashboard-Coronavirus-LiveData Pada aplikasi ini saya buat dengan  menggunakan Framework Flutter dengan meniru tampilan aplikasi sebelumnya, dan masih dalam proses pengembangan.
 - SplashScreen dan Dashboard
     
-    <!-- <img src="ScreenShot/SplashScreen.jpg" width="260px"> <img src="ScreenShot/HOmeScreen.jpg" width="260px"> -->
+    <img src="ScreenShot/SplashScreen.jpg" width="260px"> <img src="ScreenShot/HOmeScreen.jpg" width="260px">
     - SplashScreen, Menggunakan Image assets
     - HomeScreen, Menggunakan GridView untuk menampilkan data
 

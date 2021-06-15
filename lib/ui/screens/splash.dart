@@ -29,20 +29,20 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       backgroundColor: background,
-      body: Center(
-        child: Container(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              new Align(
-                // align agar psisi ada di tengah
-                alignment: Alignment.center,
-                child: Image.asset(
-                  'assets/images/logo.png',
+      body: Container(
+        child: Row(
+          children: <Widget>[
+            new Column(
+              children: <Widget>[
+                new Center(
+                  child: new Text('Coronavirus Indonesai & Live Data'),
                 ),
-              ),
-            ],
-          ),
+                new Center(
+                  child: new Image.asset('assets/images/logo.png'),
+                ),
+              ],
+            ),
+          ],
         ),
       ),
     );
