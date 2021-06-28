@@ -13,7 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   startTImer() async {
     // durasi untuk lamanya splash akan di tampilkan
-    var duration = new Duration(seconds: 2);
+    var duration = new Duration(seconds: 10);
     // return timet jika sudah selesai selnjutnya jalankan nextScreen
     return new Timer(duration, nextScreen);
   }
@@ -29,19 +29,13 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       backgroundColor: background,
-      body: Container(
+      body: Center(
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            new Column(
-              children: <Widget>[
-                new Center(
-                  child: new Text('Coronavirus Indonesai & Live Data'),
-                ),
-                new Center(
-                  child: new Image.asset('assets/images/logo.png'),
-                ),
-              ],
-            ),
+            Image.asset(
+              'assets/images/logo.png',
+            )
           ],
         ),
       ),
