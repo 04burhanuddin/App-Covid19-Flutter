@@ -45,16 +45,12 @@ Tampilan masih dalam proses develop belum selesai semua, intinya aplikasinya aka
 # Project Structure
 ```
 📦covid19_indonesia
- ┣ 📂ScreenShot
- ┃ ┣ 📜HOmeScreen.jpg
- ┃ ┗ 📜SplashScreen.jpg
  ┣ 📂assets
  ┃ ┗ 📂images
  ┃ ┃ ┣ 📜avoid.png
  ┃ ┃ ┗ 📜logo.png
  ┣ 📂lib
  ┃ ┣ 📂models
- ┃ ┃ ┣ 📜indo_provinsi.dart
  ┃ ┃ ┗ 📜kasus_indonesia.dart
  ┃ ┣ 📂shareds
  ┃ ┃ ┣ 📜shared_value.dart
@@ -64,11 +60,7 @@ Tampilan masih dalam proses develop belum selesai semua, intinya aplikasinya aka
  ┃ ┃ ┃ ┣ 📜home.dart
  ┃ ┃ ┃ ┣ 📜screens.dart
  ┃ ┃ ┃ ┗ 📜splash.dart
- ┃ ┃ ┗ 📂widget
- ┃ ┃ ┃ ┣ 📜prevention.dart
- ┃ ┃ ┃ ┗ 📜widget.dart
  ┃ ┣ 📜main.dart
- ┃ ┗ 📜themes.dart
  ```
  <b>Keterangan Folder :</b>
  - models, di dalamnya terdapat sebuah file dengan nama file `kasus_indonesia.dart` file ini digunakan unntuk menampung data dari response API yang sudah di convert dari json to dart 
