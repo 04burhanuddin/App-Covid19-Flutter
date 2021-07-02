@@ -1,5 +1,9 @@
 # Aplikasi Mobile Dashboard Covid 19
-Project UTS Framework MObile <b>STMIK Akakom Yogyakart</b>
+Project UTS Framework MObile <b>STMIK Akakom Yogyakart</b><br>
+<i><b>Simple Dashboard Covid-19 Live Data Indonesia</b></i><br>
+<!-- license -->
+[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
+
 ### Dibuat Dengan Menggunakan :
 - Flutter Version : `Flutter 2.0.3 • channel stable`
 - VS Code
@@ -72,5 +76,3 @@ Tampilan masih dalam proses develop belum selesai semua, intinya aplikasinya aka
  - ui, Untuk menampung semua yang berhubungan dengan ui mulai dari screen widget dll pada kasus ini hanya terdapat screen dan widget.
  - Widget, saya gunakan untuk share widget untuk penambahan fitur pada tampilan homeScreen namun di sini belum selesai semua/belum jadi.
  - Untuk import package ada di file yang berbeda ini saya lakukan agar lebih rapih saja dan terstruktur. dengan menggunakan part dan part of selengkapnya bisa di lihat pada program. <b>part si sini di ibaratakan sebagai perpustakaan yang menyedikan import package dan part of sebagai pengguna yang menggunakan import dari perpustakaan tersebut.</b> Part di sini tidak bisa berbagi jika file berada di luar folder.
-
-# On Progres
