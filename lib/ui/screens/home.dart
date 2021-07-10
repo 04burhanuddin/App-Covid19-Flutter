@@ -1,6 +1,4 @@
 part of 'screens.dart';
-// untuk import library sdi sini saya buat terpisah dari halaman ini
-// untuk setiap import nya ada di screen.dart
 
 class HomePage extends StatefulWidget {
   @override
@@ -11,18 +9,12 @@ class _HomePageState extends State<HomePage> {
   Future<DataIndonesia> dataIndonesia;
 
   Future<DataIndonesia> getDataIndonesia() async {
-    // get data
     var dio = Dio();
     final response = await dio.get('https://api.kawalcorona.com/indonesia/');
     print(response.data);
-    // kondisi jika data berhasil di load
     if (response.statusCode == 200) {
-      // response ==20 adalh standar response jika request sukses
-      // ini bisa di lihat juga pada aplikasi postman.
       return DataIndonesia.fromJson(response.data[0]);
-    }
-    // Kondisi jika data gagal di load
-    else {
+    } else {
       throw Exception('Gagal mengambil data');
     }
   }
@@ -36,34 +28,26 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // mengganti background
       backgroundColor: background,
       appBar: AppBar(
         title: Text("Covid Indonesia"),
-        // agar title adal di tengah
         centerTitle: true,
-        // menghilangkan tombol back ke splashscreen
         automaticallyImplyLeading: false,
       ),
       body: FutureBuilder<DataIndonesia>(
         future: dataIndonesia,
         builder: (context, snapshot) {
-          // jika berhasil maka akan menampilkan return container
-          // dan data akan di tampilkan dalam GridView
           if (snapshot.hasData) {
             return Container(
               child: Center(
                 child: GridView.count(
-                  // add padding
                   padding: const EdgeInsets.all(20),
                   crossAxisSpacing: 10,
                   mainAxisSpacing: 10,
-                  // untuk jumlah kolom pada grid di sini saya jadikan 2 kolom
                   crossAxisCount: 2,
                   children: <Widget>[
                     // Kasus positif
                     Container(
-                      // add padding dalam gridView
                       padding: EdgeInsets.only(left: 15, top: 34),
                       color: positif,
                       height: 200,
@@ -206,8 +190,6 @@ class _HomePageState extends State<HomePage> {
               ),
             );
           } else {
-            // jika gagal maka akan menampilkan indikator circursl/losding
-            // berada di tengan/center.
             return Center(
               child: CircularProgressIndicator(),
             );

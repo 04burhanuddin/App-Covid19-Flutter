@@ -7,14 +7,11 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   void nextScreen() {
-    // screen yang akan di jalankan jika splash sudah selesai
     Navigator.push(context, MaterialPageRoute(builder: (_) => HomePage()));
   }
 
   startTImer() async {
-    // durasi untuk lamanya splash akan di tampilkan
-    var duration = new Duration(seconds: 10);
-    // return timet jika sudah selesai selnjutnya jalankan nextScreen
+    var duration = new Duration(seconds: 2);
     return new Timer(duration, nextScreen);
   }
 
